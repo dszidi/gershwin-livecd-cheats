@@ -1,14 +1,14 @@
 #!/bin/sh
 
 # ALIASES
-echo "alias zshrc='source ~/.zshrc'" >> ~/.zshrc
-source ~/.zshrc
-echo "alias cl='clear'" >> ~/.zshrc
-echo "alias ll='ls -lah'" >> ~/.zshrc
-echo "alias l='ls -lh'" >> ~/.zshrc
-echo "alias l='ls -lh'" >> ~/.zshrc
-echo "alias ifconfig='ip --4 addr show | grep inet'" >> ~/.zshrc
-echo "alias gershwin-start='startx /System/Library/Scripts/Gershwin-X11'" >> ~/.zshrc
+echo "alias zshrc='source $HOME/.zshrc'" >> $HOME/.zshrc
+source $HOME/.zshrc
+echo "alias cl='clear'" >> $HOME/.zshrc
+echo "alias ll='ls -lah'" >> $HOME/.zshrc
+echo "alias l='ls -lh'" >> $HOME/.zshrc
+echo "alias l='ls -lh'" >> $HOME/.zshrc
+echo "alias ifconfig='ip --4 addr show | grep inet'" >> $HOME/.zshrc
+echo "alias gershwin-start='startx /System/Library/Scripts/Gershwin-X11'" >> $HOME/.zshrc
 zshrc
 
 # PACKAGES
