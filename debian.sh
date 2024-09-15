@@ -9,6 +9,7 @@ echo "alias l='ls -lh'" >> $HOME/.zshrc
 echo "alias l='ls -lh'" >> $HOME/.zshrc
 echo "alias ifconfig='ip --4 addr show | grep inet'" >> $HOME/.zshrc
 echo "alias gershwin-start='startx /System/Library/Scripts/Gershwin-X11'" >> $HOME/.zshrc
+echo "alias vim='nvim'" >> $HOME/.zshrc
 zshrc
 
 # PACKAGES
