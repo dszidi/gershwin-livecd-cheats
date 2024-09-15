@@ -25,12 +25,6 @@ sudo systemctl start ssh
 
 
 # Improved MOTD
-sudo figlet "Gershwin OS" > /etc/motd
-sudo echo "
-Run 'source ~/.zshrc' to enable shell aliases \
-########### \
-Add the following line to /System/Library/Scripts/Gershwin-X11 at the top of the script...\
-xrandr --output Virtual-1 --mode 1920x1440 \
-" >> /etc/motd
+cat ./startmsg >> $HOME/.zshrc
 
 echo "Setup script completed"

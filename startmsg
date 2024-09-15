@@ -1,0 +1,13 @@
+######################## START MESSAGE
+
+figlet "Gershwin OS"
+
+echo " \
+Run 'source ~/.zshrc' to enable shell aliases \
+########### \
+Add the following line to /System/Library/Scripts/Gershwin-X11 at the top of the script...\
+xrandr --output Virtual-1 --mode 1920x1440 \n \
+User: user \
+Password: live \
+" >> $HOME/.zshrc
+
