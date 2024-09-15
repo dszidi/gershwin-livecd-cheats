@@ -2,7 +2,6 @@
 
 # ALIASES
 echo "alias zshrc='source $HOME/.zshrc'" >> $HOME/.zshrc
-source $HOME/.zshrc
 echo "alias cl='clear'" >> $HOME/.zshrc
 echo "alias ll='ls -lah'" >> $HOME/.zshrc
 echo "alias l='ls -lh'" >> $HOME/.zshrc
@@ -10,6 +9,7 @@ echo "alias l='ls -lh'" >> $HOME/.zshrc
 echo "alias ifconfig='ip --4 addr show | grep inet'" >> $HOME/.zshrc
 echo "alias gershwin-start='startx /System/Library/Scripts/Gershwin-X11'" >> $HOME/.zshrc
 echo "alias vim='nvim'" >> $HOME/.zshrc
+echo "alias gershwinx11='startx /System/Library/Scripts/Gershwin-X11'" >> $HOME/.zshrc
 zshrc
 
 # PACKAGES
