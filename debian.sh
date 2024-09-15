@@ -14,7 +14,7 @@ zshrc
 
 # PACKAGES
 sudo apt update
-sudo apt install openssh-server neovim
+sudo apt install openssh-server neovim figlet
 sudo systemctl start ssh
 
 # Uncomment to fetch repos
@@ -23,8 +23,14 @@ sudo systemctl start ssh
 # cd && git clone https://github.com/gershwin-os/system.git
 # cd && git clone https://github.com/gershwin-os/applications.git
 
+
+# Improved MOTD
+sudo figlet "Gershwin OS" > /etc/motd
+sudo echo "
+Run 'source ~/.zshrc' to enable shell aliases \
+########### \
+Add the following line to /System/Library/Scripts/Gershwin-X11 at the top of the script...\
+xrandr --output Virtual-1 --mode 1920x1440 \
+" >> /etc/motd
+
 echo "Setup script completed"
-echo "Run 'source ~/.zshrc' to enable shell aliases"
-echo "###########"
-echo "Add the following line to /System/Library/Scripts/Gershwin-X11 at the top of the script..."
-echo "xrandr --output Virtual-1 --mode 1920x1440"
