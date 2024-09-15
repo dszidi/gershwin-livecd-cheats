@@ -26,5 +26,5 @@ sudo systemctl start ssh
 echo "Setup script completed"
 echo "Run 'source ~/.zshrc' to enable shell aliases"
 echo "###########"
-echo "Add the following line to /System/Library/Scripts/Gershwin-X11 before the Workspace is launched..."
-echo "xrandr --output Virtual-1 --mode 1920x1080"
+echo "Add the following line to /System/Library/Scripts/Gershwin-X11 at the top of the script..."
+echo "xrandr --output Virtual-1 --mode 1920x1440"
