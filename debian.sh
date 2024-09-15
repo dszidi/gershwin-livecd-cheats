@@ -17,12 +17,14 @@ sudo apt update
 sudo apt install openssh-server neovim figlet
 sudo systemctl start ssh
 
-# Uncomment to fetch repos
+# FETCH REPOS
 # cd && git clone https://github.com/gershwin-os/dock.git
 # cd && git clone https://github.com/gershwin-os/workspace.git
 # cd && git clone https://github.com/gershwin-os/system.git
 # cd && git clone https://github.com/gershwin-os/applications.git
 
+# UTM DISPLAY FIX
+# sudo sed -i '2i\xrandr --output Virtual-1 --mode 1920x1440' /System/Library/Scripts/Gershwin-X11
 
 # Improved MOTD
 cat ./startmsg >> $HOME/.zshrc
