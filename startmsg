@@ -9,5 +9,5 @@ Add the following line to /System/Library/Scripts/Gershwin-X11 at the top of the
 xrandr --output Virtual-1 --mode 1920x1440 \n \
 User: user \
 Password: live \
-" >> $HOME/.zshrc
+"
 
