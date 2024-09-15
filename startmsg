@@ -3,11 +3,11 @@
 figlet "Gershwin OS"
 
 echo " \
-Run 'source ~/.zshrc' to enable shell aliases \
-########### \
-Add the following line to /System/Library/Scripts/Gershwin-X11 at the top of the script...\
+Run 'source ~/.zshrc' to enable shell aliases \n \
+########### \n \
+Add the following line to /System/Library/Scripts/Gershwin-X11 at the top of the script...\n \
 xrandr --output Virtual-1 --mode 1920x1440 \n \
-User: user \
-Password: live \
+User: user \n \
+Password: live \n \
 "
 
