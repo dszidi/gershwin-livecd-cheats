@@ -14,10 +14,11 @@ zshrc
 
 # PACKAGES
 sudo apt update
-sudo apt install openssh-server neovim figlet
+sudo apt install -y openssh-server neovim figlet
 sudo systemctl start ssh
 
 # picom config
+sudo chmod 777 /System/Library/Preferences/picom.conf
 sudo cat ./picom.conf > /System/Library/Preferences/picom.conf
 
 # INSTALL DOCK
