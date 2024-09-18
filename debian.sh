@@ -17,13 +17,19 @@ sudo apt update
 sudo apt install openssh-server neovim figlet
 sudo systemctl start ssh
 
+# picom config
+sudo cat ./picom.conf > /System/Library/Preferences/picom.conf
+
+# INSTALL DOCK
+cd && git clone https://github.com/gershwin-os/dock.git
+cd dock && gmake && sudo -E gmake install
+
 # FETCH REPOS
-# cd && git clone https://github.com/gershwin-os/dock.git
 # cd && git clone https://github.com/gershwin-os/workspace.git
 # cd && git clone https://github.com/gershwin-os/system.git
 # cd && git clone https://github.com/gershwin-os/applications.git
 
-# UTM DISPLAY FIX
+# UTM DISPLAY FIX for X11
 # sudo sed -i '2i\xrandr --output Virtual-1 --mode 1920x1440' /System/Library/Scripts/Gershwin-X11
 
 # Improved MOTD
